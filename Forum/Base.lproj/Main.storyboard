@@ -1,24 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Reveal View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="GxT-Ww-wwi" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="Bf0-PH-cm4"/>
+                        <segue destination="5EQ-eR-3wv" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="aLE-7k-dXd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-676" y="748"/>
+        </scene>
+        <!--ChanelVC-->
+        <scene sceneID="3fj-hw-NGo">
+            <objects>
+                <viewController id="GxT-Ww-wwi" customClass="ChanelVC" customModule="Forum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zcx-CW-bS7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="VdI-mD-Opb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dUR-sZ-hpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="591" y="421"/>
+        </scene>
+        <!--ChatVC-->
+        <scene sceneID="Sn6-9r-4Ma">
+            <objects>
+                <viewController id="5EQ-eR-3wv" customClass="ChatVC" customModule="Forum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s5a-M4-V2f" customClass="ChatV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mx6-Nq-ZdL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8NJ-qp-EAy">
+                                        <rect key="frame" x="12" y="43" width="24" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="Z6x-bN-Qyb"/>
+                                            <constraint firstAttribute="width" constant="24" id="uQZ-Bt-6zR"/>
+                                        </constraints>
+                                        <state key="normal" image="smackBurger"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTd-Q0-YWP">
+                                        <rect key="frame" x="158" y="38.5" width="58" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.26666666666666666" green="0.30588235294117649" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="8NJ-qp-EAy" firstAttribute="top" secondItem="Mx6-Nq-ZdL" secondAttribute="top" constant="43" id="3cm-xL-Uxc"/>
+                                    <constraint firstItem="GTd-Q0-YWP" firstAttribute="centerX" secondItem="Mx6-Nq-ZdL" secondAttribute="centerX" id="4Kh-Wt-rYt"/>
+                                    <constraint firstAttribute="height" constant="77" id="9yC-Wk-MxT"/>
+                                    <constraint firstItem="8NJ-qp-EAy" firstAttribute="leading" secondItem="Mx6-Nq-ZdL" secondAttribute="leading" constant="12" id="lJf-y5-Eak"/>
+                                    <constraint firstItem="GTd-Q0-YWP" firstAttribute="centerY" secondItem="8NJ-qp-EAy" secondAttribute="centerY" id="rY5-FI-hI1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Mx6-Nq-ZdL" firstAttribute="leading" secondItem="l2A-Ya-SPj" secondAttribute="leading" id="AnM-B6-tZh"/>
+                            <constraint firstItem="Mx6-Nq-ZdL" firstAttribute="top" secondItem="s5a-M4-V2f" secondAttribute="top" id="ITP-aU-Aj5"/>
+                            <constraint firstItem="Mx6-Nq-ZdL" firstAttribute="trailing" secondItem="l2A-Ya-SPj" secondAttribute="trailing" id="aKp-9n-uUh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="l2A-Ya-SPj"/>
+                    </view>
+                    <connections>
+                        <outlet property="menuBtn" destination="8NJ-qp-EAy" id="2pQ-AP-1Ga"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QMA-49-Oaa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="581.60000000000002" y="1147.3763118440781"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="smackBurger" width="40" height="40"/>
+    </resources>
 </document>
