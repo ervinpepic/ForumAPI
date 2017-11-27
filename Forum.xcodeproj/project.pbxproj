@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B1DDDB819F88567D8D9306D /* Pods_Forum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5CFB74D33018A4E8BF1853 /* Pods_Forum.framework */; };
+		89103F2B1FCCAF27006913B5 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89103F2A1FCCAF27006913B5 /* CreateAccountVC.swift */; };
 		8999A2C21FCC274D0065F2CC /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8999A2C01FCC274D0065F2CC /* SWRevealViewController.m */; };
 		8999A2C71FCC28A30065F2CC /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8999A2C61FCC28A30065F2CC /* ChatVC.swift */; };
 		8999A2C91FCC28B40065F2CC /* ChanelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8999A2C81FCC28B40065F2CC /* ChanelVC.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		5568CAFEAE0B0E40729B2432 /* Pods-Forum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Forum.release.xcconfig"; path = "Pods/Target Support Files/Pods-Forum/Pods-Forum.release.xcconfig"; sourceTree = "<group>"; };
 		7F5CFB74D33018A4E8BF1853 /* Pods_Forum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Forum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89103F2A1FCCAF27006913B5 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		8999A2BF1FCC274C0065F2CC /* Forum-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Forum-Bridging-Header.h"; sourceTree = "<group>"; };
 		8999A2C01FCC274D0065F2CC /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		8999A2C11FCC274D0065F2CC /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				8999A2C61FCC28A30065F2CC /* ChatVC.swift */,
 				8999A2C81FCC28B40065F2CC /* ChanelVC.swift */,
 				8999A2CF1FCC4D100065F2CC /* LoginVC.swift */,
+				89103F2A1FCCAF27006913B5 /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			files = (
 				8999A2C71FCC28A30065F2CC /* ChatVC.swift in Sources */,
 				8999A2C91FCC28B40065F2CC /* ChanelVC.swift in Sources */,
+				89103F2B1FCCAF27006913B5 /* CreateAccountVC.swift in Sources */,
 				8999A2D01FCC4D100065F2CC /* LoginVC.swift in Sources */,
 				8999A2CB1FCC388C0065F2CC /* GradientView.swift in Sources */,
 				89BB44551FCC25FE00247C92 /* AppDelegate.swift in Sources */,
