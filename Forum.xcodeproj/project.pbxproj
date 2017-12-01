@@ -10,6 +10,7 @@
 		2B1DDDB819F88567D8D9306D /* Pods_Forum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5CFB74D33018A4E8BF1853 /* Pods_Forum.framework */; };
 		89103F2B1FCCAF27006913B5 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89103F2A1FCCAF27006913B5 /* CreateAccountVC.swift */; };
 		891189511FCF4C2C0033BCA0 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891189501FCF4C2C0033BCA0 /* RoundedButton.swift */; };
+		893682301FD1B3E50044557B /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8936822F1FD1B3E50044557B /* UserDataService.swift */; };
 		897C19EF1FCE034100224561 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C19EE1FCE034100224561 /* AuthService.swift */; };
 		8999A2C21FCC274D0065F2CC /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8999A2C01FCC274D0065F2CC /* SWRevealViewController.m */; };
 		8999A2C71FCC28A30065F2CC /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8999A2C61FCC28A30065F2CC /* ChatVC.swift */; };
@@ -28,6 +29,7 @@
 		7F5CFB74D33018A4E8BF1853 /* Pods_Forum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Forum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89103F2A1FCCAF27006913B5 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		891189501FCF4C2C0033BCA0 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		8936822F1FD1B3E50044557B /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		897C19EE1FCE034100224561 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		8999A2BF1FCC274C0065F2CC /* Forum-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Forum-Bridging-Header.h"; sourceTree = "<group>"; };
 		8999A2C01FCC274D0065F2CC /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				897C19EE1FCE034100224561 /* AuthService.swift */,
+				8936822F1FD1B3E50044557B /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				8999A2C71FCC28A30065F2CC /* ChatVC.swift in Sources */,
 				891189511FCF4C2C0033BCA0 /* RoundedButton.swift in Sources */,
 				8999A2C91FCC28B40065F2CC /* ChanelVC.swift in Sources */,
+				893682301FD1B3E50044557B /* UserDataService.swift in Sources */,
 				89103F2B1FCCAF27006913B5 /* CreateAccountVC.swift in Sources */,
 				897C19EF1FCE034100224561 /* AuthService.swift in Sources */,
 				8999A2D01FCC4D100065F2CC /* LoginVC.swift in Sources */,
