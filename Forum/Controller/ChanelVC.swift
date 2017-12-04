@@ -26,6 +26,10 @@ class ChanelVC: UIViewController {
         
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        setupUserInfo()
+    }
+    
     //actions ib
 
     @IBAction func loginBtnPressed(_ sender: Any) {
@@ -48,6 +52,12 @@ class ChanelVC: UIViewController {
     
     @objc func userDataDidChange(_ notif: Notification) {
         
+        setupUserInfo()
+        
+    }
+    
+    func setupUserInfo() {
+        
         if AuthService.instance.isLoggedIn {
             
             loginBtn.setTitle(UserDataService.instance.name, for: .normal)
@@ -63,6 +73,5 @@ class ChanelVC: UIViewController {
         }
         
     }
-    
     
 }
