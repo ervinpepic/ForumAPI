@@ -8,17 +8,19 @@
 
 import UIKit
 
-class ChanelVC: UIViewController {
+class ChanelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     
     //outlets
     @IBOutlet weak var loginBtn: UIButton!
     @IBAction func prepareForUnwind(segue: UIStoryboardSegue){}
     @IBOutlet weak var userImg: CircleImage!
-    
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
 
         self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 60
         
@@ -71,6 +73,35 @@ class ChanelVC: UIViewController {
             userImg.backgroundColor = UIColor.clear
             
         }
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "channelCell", for: indexPath) as? ChannelCell {
+            
+            let channel = MessageService.instance.channels[indexPath.row]
+            cell.configureCell(channel: channel)
+            return cell
+        }
+        
+        else {
+            
+            return UITableViewCell()
+            
+        }
+        
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        
+        return 1
+        
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return MessageService.instance.channels.count
         
     }
     

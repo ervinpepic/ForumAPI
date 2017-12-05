@@ -32,6 +32,7 @@ let TO_AVATAR_PICKER = "toAvatarPicker"
 
 // user Defaults
 
+
 let TOKEN_KEY = "token"
 let LOGGED_IN_KEY = "loggedIn"
 let USER_EMAIL = "userEmail"
