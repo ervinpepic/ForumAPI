@@ -32,6 +32,15 @@ class ChanelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         setupUserInfo()
     }
     
+    
+    @IBAction func addChannelPressed(_ sender: Any) {
+        
+        let addChannel = AddChannelVC()
+        addChannel.modalPresentationStyle = .custom
+        present(addChannel, animated: true, completion: nil)
+        
+    }
+    
     //actions ib
 
     @IBAction func loginBtnPressed(_ sender: Any) {
