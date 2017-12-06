@@ -57,7 +57,7 @@
                                 <rect key="frame" x="281" y="81" width="22" height="22"/>
                                 <state key="normal" image="addChannelButton"/>
                                 <connections>
-                                    <action selector="addChannelPressed:" destination="GxT-Ww-wwi" eventType="touchUpInside" id="Da6-j2-9bQ"/>
+                                    <action selector="addChannelPressed:" destination="GxT-Ww-wwi" eventType="touchUpInside" id="qc4-XM-DuH"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="8Aj-op-F6V" customClass="CircleImage" customModule="Forum" customModuleProvider="target">
@@ -86,6 +86,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="D8N-AP-28J" firstAttribute="centerY" secondItem="uXw-KG-JM7" secondAttribute="centerY" id="6Ye-oH-0qZ"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="D8N-AP-28J" secondAttribute="trailingMargin" id="8S0-3f-EIE"/>
                                                 <constraint firstItem="D8N-AP-28J" firstAttribute="leading" secondItem="uXw-KG-JM7" secondAttribute="leadingMargin" constant="12" id="Tfa-iL-Wob"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -124,6 +125,7 @@
                             <constraint firstItem="VdI-mD-Opb" firstAttribute="trailing" secondItem="hlQ-3K-tWF" secondAttribute="trailing" constant="133" id="LW3-5D-zbH"/>
                             <constraint firstItem="0Bv-0g-l6Z" firstAttribute="centerY" secondItem="aVQ-BF-920" secondAttribute="centerY" id="MCj-nN-QOW"/>
                             <constraint firstItem="8Aj-op-F6V" firstAttribute="centerY" secondItem="hlQ-3K-tWF" secondAttribute="centerY" id="QX6-ng-UzW"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0Bv-0g-l6Z" secondAttribute="trailing" constant="20" symbolic="YES" id="U7k-ut-Ssj"/>
                             <constraint firstItem="Eyq-fm-xcX" firstAttribute="top" secondItem="VdI-mD-Opb" secondAttribute="top" constant="24" id="Xca-SL-ySV"/>
                             <constraint firstItem="hlQ-3K-tWF" firstAttribute="top" secondItem="Nhn-tZ-keE" secondAttribute="bottom" constant="41" id="cMk-IU-tt8"/>
                             <constraint firstItem="aVQ-BF-920" firstAttribute="top" secondItem="VdI-mD-Opb" secondAttribute="top" constant="61" id="f8e-4B-pW4"/>
@@ -132,6 +134,7 @@
                             <constraint firstItem="Eyq-fm-xcX" firstAttribute="leading" secondItem="0Bv-0g-l6Z" secondAttribute="leading" id="iqK-sa-7ps"/>
                             <constraint firstItem="VdI-mD-Opb" firstAttribute="trailing" secondItem="aVQ-BF-920" secondAttribute="trailing" constant="72" id="j8X-at-Ycm"/>
                             <constraint firstItem="Nhn-tZ-keE" firstAttribute="leading" secondItem="zcx-CW-bS7" secondAttribute="leading" id="kbR-pJ-Xbo"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Eyq-fm-xcX" secondAttribute="trailing" constant="20" symbolic="YES" id="lGl-EO-g8m"/>
                             <constraint firstItem="8Aj-op-F6V" firstAttribute="top" secondItem="Nhn-tZ-keE" secondAttribute="bottom" constant="20" id="oQr-pp-jnN"/>
                             <constraint firstItem="Nhn-tZ-keE" firstAttribute="top" secondItem="aVQ-BF-920" secondAttribute="bottom" constant="20" id="r0K-mz-HcZ"/>
                         </constraints>
@@ -139,6 +142,12 @@
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="bottonColor">
                                 <color key="value" red="0.2666666667" green="0.30588235289999999" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                <color key="value" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                <color key="value" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
@@ -586,6 +595,7 @@
                         <viewLayoutGuide key="safeArea" id="l2A-Ya-SPj"/>
                     </view>
                     <connections>
+                        <outlet property="channelnameLabel" destination="GTd-Q0-YWP" id="qyr-fl-NdN"/>
                         <outlet property="menuBtn" destination="8NJ-qp-EAy" id="2pQ-AP-1Ga"/>
                     </connections>
                 </viewController>

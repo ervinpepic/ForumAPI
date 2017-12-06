@@ -18,10 +18,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddChannelVC" customModule="Forum" customModuleProvider="target">
             <connections>
-                <outlet property="bgView" destination="3PZ-9N-8Kk" id="NiH-yH-bMR"/>
-                <outlet property="createChannelPressed" destination="LUk-t0-CO0" id="oyc-7I-5BT"/>
-                <outlet property="descChannel" destination="OUH-vR-MhD" id="ZEH-ex-tvs"/>
-                <outlet property="nameTxt" destination="udq-hy-MmW" id="WXK-Kd-PpS"/>
+                <outlet property="bgView" destination="3PZ-9N-8Kk" id="VeV-8V-Llm"/>
+                <outlet property="descChannel" destination="OUH-vR-MhD" id="Lwf-u9-tUn"/>
+                <outlet property="nameTxt" destination="udq-hy-MmW" id="zJW-nE-vpu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -96,7 +95,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                             <connections>
-                                <action selector="createChannelPressed:" destination="-1" eventType="touchUpInside" id="HGA-gv-c2F"/>
+                                <action selector="createChannelPressed:" destination="-1" eventType="touchUpInside" id="Jmi-5b-Ngl"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYc-xk-ax0">
@@ -107,7 +106,7 @@
                             </constraints>
                             <state key="normal" image="closeButton"/>
                             <connections>
-                                <action selector="closeModalPressed:" destination="-1" eventType="touchUpInside" id="3nt-JX-6pg"/>
+                                <action selector="closeModalPressed:" destination="-1" eventType="touchUpInside" id="x18-zq-4IL"/>
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Channel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVL-5Y-cb0">
